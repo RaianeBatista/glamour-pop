@@ -1238,9 +1238,9 @@ body {
 
 /* Contact Section */
 .contact-section {
-  background: var(--gradient-pink);
-  padding: 4rem 0;
-  margin-top: 3rem;
+  background: var(--gradient-pink) !important;
+  padding: 4rem 0 !important;
+  margin-top: 3rem !important;
 }
 
 .contact-content {
@@ -1251,10 +1251,11 @@ body {
 }
 
 .contact-info h2 {
-  color: var(--white);
-  font-size: 2.5rem;
-  margin-bottom: 2rem;
-  text-shadow: 2px 2px 4px var(--shadow-pink);
+  color: var(--white) !important;
+  font-size: 2.5rem !important;
+  margin-bottom: 2rem !important;
+  text-shadow: 2px 2px 4px var(--shadow-pink) !important;
+  display: block !important;
 }
 
 .contact-item {
@@ -1326,11 +1327,11 @@ body {
 }
 
 .social-buttons {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  gap: 1rem;
-  flex-wrap: wrap;
+  display: flex !important;
+  flex-direction: row !important;
+  justify-content: center !important;
+  gap: 1rem !important;
+  flex-wrap: wrap !important;
 }
 
 .social-btn {
@@ -1390,9 +1391,9 @@ body {
 
 /* Footer */
 .footer {
-  background: linear-gradient(135deg, #333, #000);
-  color: var(--white);
-  padding: 3rem 0 1rem;
+  background: linear-gradient(135deg, #333, #000) !important;
+  color: var(--white) !important;
+  padding: 3rem 0 1rem !important;
 }
 
 .footer-content {
