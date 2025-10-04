@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Glamour Pop - Gloss Labial Extravaganza</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <h1 class="logo">✨ Glamour Pop ✨</h1>
+
+        <!-- Menu Desktop -->
+        <nav class="nav desktop-nav">
+          <a href="#" class="nav-link">Maquiagem</a>
+          <a href="#" class="nav-link">Bijuterias</a>
+          <a href="#" class="nav-link">Acessórios</a>
+          <a href="#" class="cart-icon"><i class="fas fa-shopping-bag"></i></a>
+        </nav>
+
+        <!-- Menu Mobile -->
+        <div class="mobile-menu-wrapper">
+          <a href="#" class="cart-icon mobile-cart"
+            ><i class="fas fa-shopping-bag"></i
+          ></a>
+          <button class="hamburger-menu" id="hamburgerMenu">
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+
+        <!-- Menu Mobile Overlay -->
+        <nav class="mobile-nav" id="mobileNav">
+          <div class="mobile-nav-content">
+            <button class="close-menu" id="closeMenu">
+              <i class="fas fa-times"></i>
+            </button>
+            <div class="mobile-nav-links">
+              <a href="#" class="mobile-nav-link">Maquiagem</a>
+              <a href="#" class="mobile-nav-link">Bijuterias</a>
+              <a href="#" class="mobile-nav-link">Acessórios</a>
+              <a href="#" class="mobile-nav-link">Minha Conta</a>
+              <a href="#" class="mobile-nav-link">Favoritos</a>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <div class="container">
+        <div class="product-layout">
+          <!-- Galeria de Imagens - Coluna Esquerda -->
+          <div class="gallery-section">
+            <div class="main-image-container">
+              <img
+                id="mainImage"
+                src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                alt="Gloss Labial Extravaganza"
+                class="main-image"
+              />
+              <div class="zoom-overlay">
+                <i class="fas fa-search-plus"></i>
+                <span>Clique para ampliar</span>
+              </div>
+            </div>
+
+            <div class="thumbnail-carousel">
+              <div class="thumbnails">
+                <img
+                  src="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
+                  alt="Vista principal"
+                  class="thumbnail active"
+                  data-main="https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1631729371254-42c2892f0e6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
+                  alt="Textura do gloss"
+                  class="thumbnail"
+                  data-main="https://images.unsplash.com/photo-1631729371254-42c2892f0e6e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
+                  alt="Aplicação"
+                  class="thumbnail"
+                  data-main="https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                />
+                <img
+                  src="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=200&q=80"
+                  alt="Embalagem"
+                  class="thumbnail"
+                  data-main="https://images.unsplash.com/photo-1583394838336-acd977736f90?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=800&q=80"
+                />
+              </div>
+            </div>
+          </div>
+
+          <!-- Detalhes do Produto - Coluna Direita -->
+          <div class="product-details">
+            <div class="product-header">
+              <h1 class="product-title">💋 Gloss Labial Extravaganza ✨</h1>
+              <div class="rating">
+                <div class="stars">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <span class="rating-text">(127 avaliações)</span>
+              </div>
+            </div>
+
+            <div class="price-section">
+              <span class="current-price">R$ 49,90</span>
+              <span class="old-price">R$ 69,90</span>
+              <span class="discount-badge">-29%</span>
+            </div>
+
+            <div class="product-options">
+              <div class="option-group">
+                <h3 class="option-title">💄 Escolha sua Cor:</h3>
+                <div class="color-selector">
+                  <input
+                    type="radio"
+                    id="cor1"
+                    name="cor"
+                    value="rosa-bebe"
+                    checked
+                  />
+                  <label
+                    for="cor1"
+                    class="color-chip rosa-bebe"
+                    data-color="Rosa Bebê"
+                  ></label>
+
+                  <input type="radio" id="cor2" name="cor" value="pink-neon" />
+                  <label
+                    for="cor2"
+                    class="color-chip pink-neon"
+                    data-color="Pink Neon"
+                  ></label>
+
+                  <input
+                    type="radio"
+                    id="cor3"
+                    name="cor"
+                    value="coral-vibrante"
+                  />
+                  <label
+                    for="cor3"
+                    class="color-chip coral-vibrante"
+                    data-color="Coral Vibrante"
+                  ></label>
+
+                  <input
+                    type="radio"
+                    id="cor4"
+                    name="cor"
+                    value="nude-glossy"
+                  />
+                  <label
+                    for="cor4"
+                    class="color-chip nude-glossy"
+                    data-color="Nude Glossy"
+                  ></label>
+
+                  <input type="radio" id="cor5" name="cor" value="berry-pop" />
+                  <label
+                    for="cor5"
+                    class="color-chip berry-pop"
+                    data-color="Berry Pop"
+                  ></label>
+                </div>
+                <div class="selected-color">
+                  Cor selecionada: <span id="colorName">Rosa Bebê</span>
+                </div>
+              </div>
+
+              <div class="option-group">
+                <h3 class="option-title">✨ Acabamento:</h3>
+                <div class="finish-selector">
+                  <input
+                    type="radio"
+                    id="finish1"
+                    name="acabamento"
+                    value="glossy"
+                    checked
+                  />
+                  <label for="finish1" class="finish-chip">Glossy</label>
+
+                  <input
+                    type="radio"
+                    id="finish2"
+                    name="acabamento"
+                    value="holographic"
+                  />
+                  <label for="finish2" class="finish-chip">Holográfico</label>
+
+                  <input
+                    type="radio"
+                    id="finish3"
+                    name="acabamento"
+                    value="glitter"
+                  />
+                  <label for="finish3" class="finish-chip">Glitter</label>
+                </div>
+              </div>
+            </div>
+
+            <div class="quantity-section">
+              <label for="quantity">Quantidade:</label>
+              <div class="quantity-controls">
+                <button class="qty-btn minus">-</button>
+                <input type="number" id="quantity" value="1" min="1" max="10" />
+                <button class="qty-btn plus">+</button>
+              </div>
+            </div>
+
+            <div class="action-buttons">
+              <button class="add-to-cart-btn">
+                <i class="fas fa-shopping-bag"></i>
+                Adicionar ao Carrinho
+              </button>
+              <button class="buy-now-btn">
+                <i class="fas fa-bolt"></i>
+                Comprar Agora
+              </button>
+              <button class="wishlist-btn">
+                <i class="far fa-heart"></i>
+              </button>
+            </div>
+
+            <div class="product-info">
+              <div class="info-item">
+                <i class="fas fa-truck"></i>
+                <span>Frete Grátis para todo Brasil</span>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-undo"></i>
+                <span>Devolução em até 30 dias</span>
+              </div>
+              <div class="info-item">
+                <i class="fas fa-shield-alt"></i>
+                <span>Produto original e lacrado</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Seções de Engajamento -->
+        <div class="engagement-sections">
+          <!-- Combinações Perfeitas -->
+          <section class="perfect-matches">
+            <h2 class="section-title">💖 Combinações Perfeitas</h2>
+            <div class="related-products">
+              <div class="product-card">
+                <img
+                  src="https://images.unsplash.com/photo-1515688594390-b649af70d282?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
+                  alt="Batom Matte Pop"
+                />
+                <h3>Batom Matte Pop</h3>
+                <p class="price">R$ 39,90</p>
+                <button class="quick-add">Adicionar</button>
+              </div>
+              <div class="product-card">
+                <img
+                  src="https://images.unsplash.com/photo-1616683693504-3ea7e9ad6fec?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
+                  alt="Delineador Holográfico"
+                />
+                <h3>Delineador Holográfico</h3>
+                <p class="price">R$ 29,90</p>
+                <button class="quick-add">Adicionar</button>
+              </div>
+              <div class="product-card">
+                <img
+                  src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
+                  alt="Brincos Y2K Stars"
+                />
+                <h3>Brincos Y2K Stars</h3>
+                <p class="price">R$ 24,90</p>
+                <button class="quick-add">Adicionar</button>
+              </div>
+              <div class="product-card">
+                <img
+                  src="https://images.unsplash.com/photo-1515562141207-7a88fb7ce338?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=300&q=80"
+                  alt="Choker Hologram"
+                />
+                <h3>Choker Hologram</h3>
+                <p class="price">R$ 19,90</p>
+                <button class="quick-add">Adicionar</button>
+              </div>
+            </div>
+          </section>
+
+          <!-- Avaliações de Clientes -->
+          <section class="customer-reviews">
+            <h2 class="section-title">⭐ Avaliações dos Clientes</h2>
+
+            <div class="reviews-summary">
+              <div class="average-rating">
+                <span class="rating-number">4.9</span>
+                <div class="stars-large">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <p>Baseado em 127 avaliações</p>
+              </div>
+
+              <div class="rating-breakdown">
+                <div class="rating-bar">
+                  <span>5 estrelas</span>
+                  <div class="bar">
+                    <div class="fill" style="width: 85%"></div>
+                  </div>
+                  <span>85%</span>
+                </div>
+                <div class="rating-bar">
+                  <span>4 estrelas</span>
+                  <div class="bar">
+                    <div class="fill" style="width: 12%"></div>
+                  </div>
+                  <span>12%</span>
+                </div>
+                <div class="rating-bar">
+                  <span>3 estrelas</span>
+                  <div class="bar">
+                    <div class="fill" style="width: 3%"></div>
+                  </div>
+                  <span>3%</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="reviews-list">
+              <div class="review-item">
+                <div class="review-header">
+                  <div class="reviewer-info">
+                    <img
+                      src="https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=50&q=80"
+                      alt="Ana"
+                      class="reviewer-avatar"
+                    />
+                    <div>
+                      <span class="reviewer-name">Ana Carolina</span>
+                      <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="review-date">Há 2 dias</span>
+                </div>
+                <p class="review-text">
+                  "Amei demais! A cor Rosa Bebê é perfeita e a textura é
+                  incrível. Dura muito tempo nos lábios e não resseca. Já
+                  comprei 3 cores diferentes! 💕"
+                </p>
+              </div>
+
+              <div class="review-item">
+                <div class="review-header">
+                  <div class="reviewer-info">
+                    <img
+                      src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=50&q=80"
+                      alt="Mariana"
+                      class="reviewer-avatar"
+                    />
+                    <div>
+                      <span class="reviewer-name">Mariana Santos</span>
+                      <div class="review-stars">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                      </div>
+                    </div>
+                  </div>
+                  <span class="review-date">Há 1 semana</span>
+                </div>
+                <p class="review-text">
+                  "O acabamento holográfico é LINDO! Recebo elogios toda vez que
+                  uso. A entrega foi super rápida também. Recomendo muito! ✨"
+                </p>
+              </div>
+            </div>
+
+            <div class="review-form">
+              <h3>Deixe sua avaliação</h3>
+              <form>
+                <div class="rating-input">
+                  <label>Sua avaliação:</label>
+                  <div class="star-rating">
+                    <input type="radio" id="star5" name="rating" value="5" />
+                    <label for="star5"><i class="fas fa-star"></i></label>
+                    <input type="radio" id="star4" name="rating" value="4" />
+                    <label for="star4"><i class="fas fa-star"></i></label>
+                    <input type="radio" id="star3" name="rating" value="3" />
+                    <label for="star3"><i class="fas fa-star"></i></label>
+                    <input type="radio" id="star2" name="rating" value="2" />
+                    <label for="star2"><i class="fas fa-star"></i></label>
+                    <input type="radio" id="star1" name="rating" value="1" />
+                    <label for="star1"><i class="fas fa-star"></i></label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <input type="text" placeholder="Seu nome" required />
+                </div>
+                <div class="form-group">
+                  <textarea
+                    placeholder="Compartilhe sua experiência com o produto..."
+                    required
+                  ></textarea>
+                </div>
+                <button type="submit" class="submit-review">
+                  Enviar Avaliação
+                </button>
+              </form>
+            </div>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <!-- Modal de Zoom -->
+    <div id="imageModal" class="modal">
+      <span class="close">&times;</span>
+      <img class="modal-content" id="zoomedImage" />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
